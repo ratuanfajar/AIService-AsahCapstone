@@ -295,8 +295,6 @@ for each_student_in_database:
     persona = predict_cluster(features)
     insights = generate_llm_analysis(features, persona)
     store_results_in_database(persona, insights)
-
-# Generate institutional reports and trend analysis
 ```
 
 **Scalability Considerations:**
@@ -375,19 +373,19 @@ for each_student_in_database:
 - **LLM Output Consistency**: 95%+ valid JSON responses
 
 ### Persona Characteristics (Learned from Data)
-1. **Active Learners** (81%):
+1. **Active Learners**:
    - High consistency (40+ active days)
    - Balanced project/exam engagement
    - Low procrastination
    - Stable exam performance
 
-2. **Low Engagement Learners** (6%):
+2. **Low Engagement Learners**:
    - Sporadic participation (<20 active days)
    - Low completion rates
    - High procrastination patterns
    - **Requires intervention and support**
 
-3. **Exam-Focused Learners** (9%):
+3. **Exam-Focused Learners**:
    - Feast/famine study pattern
    - Peak exam performance, low project engagement
    - Strategic timing behavior
